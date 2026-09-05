@@ -1,0 +1,31 @@
+Contiki is an open source, highly portable, networked, multi-tasking
+operating system for memory-constrained systems.
+
+Contiki runs on a variety of tiny systems ranging from embedded 8-bit
+microcontrollers to old homecomputers such the Commodore 64. Code
+footprint is on the order of kilobytes and memory usage can be
+configured to be as low as tens of bytes.
+
+Contiki provides a simple event-driven kernel with per-process
+optional preemptive multi-threading, interprocess communication using
+message passing through events, a dynamic process structure with
+support for loading and unloading programs, native TCP/IP support
+using the uIP TCP/IP stack, and a GUI subsystem with either direct
+graphic support for locally connected terminals or networked virtual
+display with VNC or over Telnet.
+
+The Contiki source code is split into the following directories:
+
+  apps/ - Applications
+  conf/ - Example configuration files
+  ctk/  - CTK, the Contiki GUI toolkit
+  doc/  - Files for building documentation from the sources
+  ek/   - Event kernel, multitasking, protothreads
+  lib/  - Libraries 
+  uip/  - The uIP TCP/IP stack
+
+To build a Contiki system, you also need a Contiki port. This contains
+all the architecture specific files needed to build an actual
+system. For most ports, the build procedure is simple: place the
+port's directory in the same directory as the contiki/ directory and
+run "make" (or "gmake" under FreeBSD) in the port's directory.

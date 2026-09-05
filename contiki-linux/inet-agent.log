@@ -1,0 +1,2 @@
+inet-agent: DNS relay ready (/tmp/contiki-dns-agent.sock)
+inet-agent: HTTP relay ready (/tmp/contiki-http.sock)
